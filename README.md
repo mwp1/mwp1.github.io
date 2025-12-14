@@ -51,3 +51,6 @@ Built with Python + Flask and SQLite:
 ## 📄 License
 
 MIT License.
+
+
+[Privacy Policy](privacy.md) | [Terms of Use](terms.md)
