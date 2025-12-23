@@ -3,7 +3,7 @@
 
 Tak, fordi du har valgt Bilstrøm A/S. Bilstrøm A/S leverer en tjeneste til optimering af elforbruget (dvs. intelligent forbrug) af energienheder i hjemmet og elbiler (enheder) baseret på dynamikken på elmarkederne (tjenesten). Bilstrøm A/S’ tjenester gør det muligt for dig at spare penge ved at få enhederne til at forbruge energi, når elektriciteten er billigere, og undgå forbrug, når elektriciteten er dyr.
 
-Vores kontraktlige vilkår for brug
+## Vores kontraktlige vilkår for brug
 
 Når du bruger og drager fordel af vores tjenester, anerkender du, at du har læst brugsbetingelserne, der er beskrevet her, og at du accepterer at overholde dem, indtil du beslutter dig for at stoppe med at bruge vores tjenester. Det står dig frit for at vælge, om du vil bruge vores tjenester. For detaljer om opsigelsesprocessen, se venligst afsnit 9 (Opsigelse) nedenfor. Du anerkender, at visse funktioner i vores tjenester kan kræve et betalt abonnement.
 
@@ -17,7 +17,7 @@ Bilstrøm A/S’ tjeneste er tilgængelig via en mobil- eller webapplikation. Fo
 
 Bilstrøm A/S’ tjenester giver dig mulighed for at oplade dine enheder i perioder, hvor priserne er mere gunstige, og dermed optimere den mængde energi, du bruger, og endda give dig mulighed for at generere indtjening baseret på en række faktorer. For eksempel - for elektriske køretøjer - omfatter disse faktorer energimængden og det antal timer, du angiver, at din enhed skal nå sit mål for batteriets opladningstilstand. På den måde kan du generere indtjening blot ved at oplade din enhed natten over på dit udpegede opladningssted derhjemme.
 
-¤¤ Abonnements- og betalingsbetingelser
+## Abonnements- og betalingsbetingelser
 
 Visse funktioner i Bilstrøm A/S’ tjenester kan kræve et betalt abonnement. Detaljer vedrørende abonnementer, herunder priser, fornyelse og opsigelsesvilkår, findes i applikationen og på de respektive app store-sider (Apple App Store og Google Play Store). Der henvises til disse kilder for de mest aktuelle oplysninger.
 
