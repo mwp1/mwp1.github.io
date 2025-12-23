@@ -1,3 +1,4 @@
+
 ## En introduktion til Bilstrøm A/S
 
 Tak, fordi du har valgt Bilstrøm A/S. Bilstrøm A/S leverer en tjeneste til optimering af elforbruget (dvs. intelligent forbrug) af energienheder i hjemmet og elbiler (enheder) baseret på dynamikken på elmarkederne (tjenesten). Bilstrøm A/S’ tjenester gør det muligt for dig at spare penge ved at få enhederne til at forbruge energi, når elektriciteten er billigere, og undgå forbrug, når elektriciteten er dyr.
@@ -54,7 +55,7 @@ Bilstrøm A/S indsamler og behandler personoplysninger for at kunne levere tjene
 
 For at opsige din brug af Bilstrøm A/S’ tjeneste permanent kan du sende en e-mail til support@bilstrom.io
 
-. Opsigelse kræver to ugers varsel. For at undgå tvivl bør du, hvis du beslutter dig for at opsige tjenesten, først fjerne forbindelsen mellem dine enheder og Bilstrøm A/S-applikationen for at sikre, at Bilstrøm A/S holder op med at indsamle data fra enhederne. Sletning af appen vil ikke automatisk informere os om din beslutning om at opsige din brug af vores tjenester.
+Opsigelse kræver to ugers varsel. For at undgå tvivl bør du, hvis du beslutter dig for at opsige tjenesten, først fjerne forbindelsen mellem dine enheder og Bilstrøm A/S-applikationen for at sikre, at Bilstrøm A/S holder op med at indsamle data fra enhederne. Sletning af appen vil ikke automatisk informere os om din beslutning om at opsige din brug af vores tjenester.
 
 Hvis du har abonneret på en betalt tjeneste, kan du til enhver tid opsige dit abonnement via Apple App Store eller Google Play Store, eller ved at kontakte os direkte. Abonnementer fornyes automatisk, medmindre de opsiges mindst 24 timer før udløbet af den aktuelle periode.
 
