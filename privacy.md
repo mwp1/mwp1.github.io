@@ -55,21 +55,21 @@ Ud over betalingsbehandling bruger vi også eksterne processorer til at analyser
 
 Følgende liste indeholder navnene på sådanne processorer sammen med korte beskrivelser af den behandling, de udfører for os, samt links til deres privatlivspolitikker:
 
-Apple - iTunes Store: overvågning af applikationskvalitet og automatisk fejlrapportering
+- Apple - iTunes Store: overvågning af applikationskvalitet og automatisk fejlrapportering
 
-AppsFlyer - muliggør anskaffelsestilskrivning på native applikationer
+- AppsFlyer - muliggør anskaffelsestilskrivning på native applikationer
 
-Google
+- Google
 
-Google Analytics: sporer brugernes aktiviteter og foretager demografiske analyser
+- Google Analytics: sporer brugernes aktiviteter og foretager demografiske analyser
 
-Google Analytics for Firebase: giver data om købstilskrivning og produktbrug
+- Google Analytics for Firebase: giver data om købstilskrivning og produktbrug
 
-Google Play Store: overvågning af applikationskvalitet og automatisk fejlrapportering
+- Google Play Store: overvågning af applikationskvalitet og automatisk fejlrapportering
 
-Sentry overvågning af applikationskvalitet og automatisk fejlrapportering
+- Sentry overvågning af applikationskvalitet og automatisk fejlrapportering
 
-RevenueCat administrerer abonnementsoplysninger, herunder fornyelsesstatus og betalingsmetoder
+- RevenueCat administrerer abonnementsoplysninger, herunder fornyelsesstatus og betalingsmetoder
 
 ## Sikkerhed
 
@@ -117,6 +117,5 @@ Hvis du har givet dit samtykke, kan Bilstrøm A/S sende direkte markedsføringsm
 
 I tilfælde af en anmodning, ansøgning eller klage vedrørende behandling af personoplysninger bedes du kontakte support@bilstrom.io
 
-.
 
 Bilstrøm A/S har ret til at ændre denne privatlivspolitik til enhver tid og vil underrette dig om eventuelle ændringer på sin webside.
