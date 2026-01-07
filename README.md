@@ -1,7 +1,4 @@
-# 🔌 AutoCharge — Smart EV Charging
-
-Welcome to **AutoCharge**, a smart EV-charging system with live map data, vehicle integration and intelligent pricing.
-
+# 🔌 Bilstrøm
 ---
 
 ## 🌐 Website
@@ -21,7 +18,6 @@ You can visit the project website here:
 ## 🚗 Features
 
 - Live EV data (battery, range, position)
-- Smart charging automation
 - Login with car connectivity
 - Multi-vehicle support
 - Real-time map of charging stations
