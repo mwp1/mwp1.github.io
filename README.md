@@ -1,26 +1,18 @@
 # 🔌 Bilstrøm
 ---
 
-## 🌐 Website
+## 🌐 Support
 
-You can visit the project website here:
+For support send en mail til:
 
-👉 **https://your-website-url.com**
+ **support@bilstrom.dk**
 
----
-
-## 📸 Preview
-
-![Website Preview](https://via.placeholder.com/1000x400?text=AutoCharge+Website+Preview)
-
----
 
 ## 🚗 Features
 
-- Live EV data (battery, range, position)
-- Login with car connectivity
-- Multi-vehicle support
-- Real-time map of charging stations
+- Smart chargin
+- Login med car connectivity
+- Kan bruges på flere biler
 
 ---
 
@@ -32,15 +24,6 @@ The AutoCharge Flutter app communicates with the backend to fetch:
 - Car login & connectivity  
 - Charging stations  
 
----
-
-## 🛠️ Backend
-
-Built with Python + Flask and SQLite:
-- `/login` — authenticate & bind device  
-- `/get-data` — fetch car + map data  
-- `/post-start` — start charging  
-- `/bootstrap` — load device + user info  
 
 ---
 
