@@ -1,0 +1,281 @@
+/* ===== Base Styles ===== */
+:root {
+    --ft-black: #000000;
+    --ft-white: #faeae0;
+    --ft-red: #E01E5A;    /* Financial Times red */
+    --ft-gray: #666666;
+    --ft-light-gray: #f5f5f5;
+    --ft-text: #333333;
+    --ft-border: #e0e0e0;
+    --ft-font-serif: Georgia, "Times New Roman", serif;
+    --ft-font-sans: Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ft-font-serif);
+    color: var(--ft-text);
+    line-height: 1.6;
+    background-color: var(--ft-white);
+    font-size: 16px;
+}
+
+a {
+    color: var(--ft-red);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Layout ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Header & Navigation ===== */
+.header {
+    padding: 40px 0;
+    border-bottom: none;
+    position: relative; /* For absolute positioning of nav */
+}
+
+/* Add this to your existing style.css */
+.logo {
+    height: 46px; /* Match the height of your header title */
+    width: auto;
+    margin-right: 15px; /* Space between logo and title */
+    vertical-align: middle;
+}
+
+/* Update the header-content to align items properly */
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; /* For absolute positioning of nav */
+}
+
+.header-title {
+    font-family: "Times New Roman", serif;
+    font-size: 46px;
+    font-weight: normal;
+    color: var(--ft-black);
+    margin: 0;
+    flex: 1;
+}
+
+
+
+.header-title a {
+    color: var(--ft-black);
+}
+
+.header-tagline {
+    display: none; /* Hide tagline for cleaner look */
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links a {
+    color: var(--ft-gray);
+    font-size: 16px;
+    font-family: var(--ft-font-sans);
+}
+
+/* Ensure the header container has enough height */
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ===== Main Content ===== */
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.main-content {
+    grid-column: 1;
+}
+
+.sidebar {
+    grid-column: 2;
+    padding: 20px;
+    border-left: 1px solid var(--ft-border);
+    
+}
+
+.sidebar-title {
+    font-family: var(--ft-font-sans);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--ft-black);
+}
+
+.sidebar-list {
+    list-style: none;
+}
+
+.sidebar-list li {
+    margin-bottom: 10px;
+}
+
+.sidebar-list a {
+    color: var(--ft-gray);
+    font-size: 14px;
+}
+
+/* ===== Blog Posts ===== */
+.post {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--ft-border);
+}
+
+.post-title {
+    font-family: var(--ft-font-serif);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--ft-black);
+}
+
+.post-title a {
+    color: var(--ft-black);
+}
+
+.post-meta {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    gap: 0; /* Remove default gap */
+    font-size: 14px;
+    color: var(--ft-gray);
+    margin-bottom: 15px;
+}
+
+.post-excerpt {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: var(--ft-gray);
+}
+
+.post-intro {
+    font-size: 18px; /* Larger than the default 18px */
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: var(--ft-font-serif); /* Optional: Match your body font */
+}
+
+.post-read-more {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-screenshot {
+    height: 550px; /* Adjust this value to your preference */
+    width: auto;
+    border-radius: 6px; /* Optional: Add rounded corners */
+    margin-right: 10px;
+}
+
+/* App Store badge container */
+.app-store-container {
+    margin-top: 20px; /* Slightly bigger top margin */
+    text-align: center; /* Center the badge */
+}
+
+/* ===== Footer ===== */
+.footer {
+    border-top: 1px solid var(--ft-border);
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--ft-gray);
+    font-family: var(--ft-font-sans);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+/* ===== Terms/Privacy Pages ===== */
+.terms-privacy {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.terms-privacy h1 {
+    font-family: var(--ft-font-serif);
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--ft-black);
+}
+
+.terms-privacy h2 {
+    font-family: var(--ft-font-serif);
+    font-size: 20px;
+    margin: 30px 0 15px 0;
+    color: var(--ft-black);
+}
+
+.terms-privacy p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 1px solid var(--ft-border);
+        padding-top: 20px;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links on mobile */
+    }
+}
