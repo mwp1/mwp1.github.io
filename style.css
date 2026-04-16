@@ -69,6 +69,7 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     position: relative; /* For absolute positioning of nav */
+    flex-wrap: wrap; 
 }
 
 .header-title {
@@ -120,6 +121,7 @@ img {
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     margin-bottom: 40px;
+    align-items: start;
 }
 
 .main-content {
@@ -203,10 +205,11 @@ img {
 }
 
 .post-screenshot {
-    height: 550px; /* Adjust this value to your preference */
-    width: auto;
-    border-radius: 6px; /* Optional: Add rounded corners */
+    max-height: 550px; /* Maximum height */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 6px;
     margin-right: 10px;
+    height: auto; /* Override fixed height */
 }
 
 /* App Store badge container */
@@ -264,18 +267,38 @@ img {
 }
 
 /* ===== Responsive Design ===== */
+/* Mobile: Merge sidebar into main flow */
 @media (max-width: 768px) {
     .main {
         grid-template-columns: 1fr;
     }
-
     .sidebar {
-        border-left: none;
+        display: contents; /* Makes its children direct children of .main */
+    }
+    .sidebar > article {
+        order: 1; /* Place screenshot after the first post */
         border-top: 1px solid var(--ft-border);
         padding-top: 20px;
+        border-left: none;
     }
+    .main-content > article:first-child {
+        order: 0; /* First post stays first */
+    }
+    .main-content > article:not(:first-child) {
+        order: 2; /* Second post comes after the screenshot */
+    }
+}
 
+
+/* Mobile: Force nav-links to a new line */
+@media (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide nav links on mobile */
+        width: 100%; /* Force to new line */
+        display: flex; /* Keep links in a row */
+        justify-content: center; /* Center the links horizontally */
+        gap: 20px; /* Space between links */
+        margin-top: 40px; /* Bigger top margin */
+        padding: 0;
+        list-style: none;
     }
 }
