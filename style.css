@@ -1,7 +1,7 @@
 /* ===== Base Styles ===== */
 :root {
     --ft-black: #000000;
-    --ft-white: #faeae0;
+    --ft-white: #fff1e5;
     --ft-red: #E01E5A;    /* Financial Times red */
     --ft-gray: #666666;
     --ft-light-gray: #f5f5f5;
@@ -18,11 +18,19 @@
 }
 
 body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     font-family: var(--ft-font-serif);
     color: var(--ft-text);
     line-height: 1.6;
-    background-color: var(--ft-white);
     font-size: 16px;
+    background-color: var(--ft-white); /* Fallback color */
+    background-image: url('assets/vindmølle1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 a {
@@ -48,9 +56,10 @@ img {
 
 /* ===== Header & Navigation ===== */
 .header {
-    padding: 40px 0;
-    border-bottom: none;
-    position: relative; /* For absolute positioning of nav */
+    background-color: var(--ft-white); /* Your normal background color */
+    padding: 7px 0; /* Optional: Add padding if needed */
+    position: relative; /* Ensures it stays above other elements */
+    z-index: 100; /* Ensures it appears above the body background */
 }
 
 /* Add this to your existing style.css */
@@ -101,10 +110,11 @@ img {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: -7px;
 }
 
 .nav-links a {
-    color: var(--ft-gray);
+    color: var(--ft-black);
     font-size: 16px;
     font-family: var(--ft-font-sans);
 }
@@ -156,6 +166,42 @@ img {
     font-size: 14px;
 }
 
+
+.promo-section {
+    height: 800px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically in the section */
+    align-items: flex-start; /* Align children to the left */
+    text-align: left;
+    color: var(--ft-white);
+    padding: 0 0 0 18%; /* Top and left padding */
+    margin-bottom: 40px;
+    margin-top: 220px;
+}
+
+.promo-slogan {
+    font-family: var(--ft-font-sans);
+    font-size: 3rem;
+    font-weight: normal;
+    max-width: 800px;
+    line-height: 1.2;
+    
+    margin: 0; /* Remove default margins */
+}
+
+.promo-subtext {
+    font-family: var(--ft-font-sans);
+    font-size: 1.5rem;
+    max-width: 800px;
+    
+    margin-top: 20px; /* Space between slogan and subtext */
+    margin: 0; /* Remove default margins if needed */
+}
+
+
+
+
 /* ===== Blog Posts ===== */
 .post {
     margin-bottom: 40px;
@@ -189,7 +235,7 @@ img {
     font-size: 16px;
     line-height: 1.7;
     margin-bottom: 15px;
-    color: var(--ft-gray);
+    color: var(--ft-black);
 }
 
 .post-intro {

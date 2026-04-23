@@ -24,6 +24,13 @@
         </div>
     </header>
 
+
+    <div class="promo-section">
+        <h2 class="promo-slogan">Billig smartopladning overalt</h2>
+        <p class="promo-subtext">Det kan betale sig at installere sin egen ladeboks fordi smartopladning kan du styres fra bilen med Bilstrøm</p>
+    </div>
+
+
     <main class="main container">
         <div class="main-content">
             <article class="post">
@@ -112,3 +119,21 @@
     </footer>
 </body>
 </html>
+
+
+<script>
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const maxScroll = 1300; // Adjust this to control how fast the fade happens
+        const opacity = Math.max(1 - (scrollPosition / maxScroll), 0.2); // Fade from 1 to 0.2
+
+        // Apply the opacity to the background image
+        document.body.style.background = `
+            linear-gradient(rgba(250, 234, 224, ${1 - opacity}), rgba(250, 234, 224, ${1 - opacity})),
+            url('assets/vindmølle1.jpg')
+        `;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundAttachment = 'fixed';
+        document.body.style.backgroundPosition = 'center';
+    });
+</script>
