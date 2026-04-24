@@ -336,7 +336,7 @@ img {
     }
 
     /* 4. Ensure background image fits the vertical screen height */
-    body.homepage {
+    body{
         background-size: cover;
         background-attachment: scroll; /* Disable fixed for mobile */
         background-position: center;
