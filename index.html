@@ -122,18 +122,36 @@
 
 
 <script>
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.scrollY;
-        const maxScroll = 1200; // Adjust this to control how fast the fade happens
-        const opacity = Math.max(1 - (scrollPosition / maxScroll), 0.18); // Fade from 1 to 0.2
+    if (window.innerWidth > 768) {
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const maxScroll = 1200; // Adjust this to control how fast the fade happens
+            const opacity = Math.max(1 - (scrollPosition / maxScroll), 0.18); // Fade from 1 to 0.2
 
-        // Apply the opacity to the background image
-        document.body.style.background = `
-            linear-gradient(rgba(250, 234, 224, ${1 - opacity}), rgba(250, 234, 224, ${1 - opacity})),
-            url('assets/vindmølle1.jpg')
-        `;
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundAttachment = 'fixed';
-        document.body.style.backgroundPosition = 'center';
-    });
+            // Apply the opacity to the background image
+            document.body.style.background = `
+                linear-gradient(rgba(250, 234, 224, ${1 - opacity}), rgba(250, 234, 224, ${1 - opacity})),
+                url('assets/vindmølle1.jpg')
+            `;
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundAttachment = 'fixed';
+            document.body.style.backgroundPosition = 'center';
+        });
+    }
+        if (window.innerWidth <= 768) {
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const maxScroll = 1200; // Adjust this to control how fast the fade happens
+            const opacity = Math.max(1 - (scrollPosition / maxScroll), 0.18); // Fade from 1 to 0.2
+
+            // Apply the opacity to the background image
+            document.body.style.background = `
+                linear-gradient(rgba(250, 234, 224, ${1 - opacity}), rgba(250, 234, 224, ${1 - opacity})),
+                url('assets/vindmølle1.jpg')
+            `;
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundAttachment = 'scroll';
+            document.body.style.backgroundPosition = 'center';
+        });
+    }
 </script>
