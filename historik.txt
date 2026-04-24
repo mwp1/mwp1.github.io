@@ -1,0 +1,6 @@
+Bilstrøm er en iPhone app er gør bilopladning billigere ved automatisk at oplade bilen i timer hvor strømmen er billigere.
+                    I Danmark svinger strømprisen meget fordi en stor del af vores strøm kommer fra vindmøller og solceller, som begge afhænger af vejret.
+                    Derfor er der rigtigt meget at spare ved at være strategisk med hvilke timer man vælger at oplade. På den anden side er det måske ikke så
+                    fedt at skulle stå op kl 3 om natten og starte bilopladningen fordi strømmen lige er blevet billigere. Med Bilstrøm appen kan du sætte bilen
+                    til opladning når som helst på dagen og så sætte et afgangstidspunkt i appen og starte den automatiske opladning. Appen beregner så hvor mange
+                    timer der er behov for at oplade og vælger de billigste timer inden afgangstidspunktet.
