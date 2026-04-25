@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/1024.png" type="image/png">
 </head>
 <body>
+    <div class="fixed-background"></div>
     <header class="header">
         <div class="header-content">
             <img src="assets/1024.png" alt="Bilstrøm Logo" class="logo">
@@ -125,34 +126,26 @@
     if (window.innerWidth > 768) {
         window.addEventListener('scroll', function() {
             const scrollPosition = window.scrollY;
-            const maxScroll = 1200; // Adjust this to control how fast the fade happens
-            const opacity = Math.max(1 - (scrollPosition / maxScroll), 0.18); // Fade from 1 to 0.2
+            const maxScroll = 1200;
+            const opacity = Math.max(1 - (scrollPosition / maxScroll), 0.18);
 
-            // Apply the opacity to the background image
-            document.body.style.background = `
-                linear-gradient(rgba(250, 234, 224, ${1 - opacity}), rgba(250, 234, 224, ${1 - opacity})),
-                url('assets/vindmølle1.jpg')
-            `;
-            document.body.style.backgroundSize = 'cover';
-            document.body.style.backgroundAttachment = 'fixed';
-            document.body.style.backgroundPosition = 'center';
+            // Apply fade effect to the fixed-background div
+            document.querySelector('.fixed-background').style.background =
+                `linear-gradient(rgba(250, 234, 224, ${1 - opacity}), rgba(250, 234, 224, ${1 - opacity})),
+                url('assets/vindmølle1.jpg') no-repeat center center`;
         });
     }
-        if (window.innerWidth <= 768) {
+
+    if (window.innerWidth <= 768) {
         window.addEventListener('scroll', function() {
             const scrollPosition = window.scrollY;
-            const maxScroll = 1200; // Adjust this to control how fast the fade happens
-            const opacity = Math.max(1 - (scrollPosition / maxScroll), 0.18); // Fade from 1 to 0.2
+            const maxScroll = 1200;
+            const opacity = Math.max(1 - (scrollPosition / maxScroll), 0.18);
 
-            // Apply the opacity to the background image
-            document.body.style.background = `
-                linear-gradient(rgba(250, 234, 224, ${1 - opacity}), rgba(250, 234, 224, ${1 - opacity})),
-                url('assets/vindmølle1.jpg')
-            `;
-            document.body.style.backgroundSize = 'cover';
-            document.body.style.backgroundAttachment = 'fixed';
-            document.body.style.backgroundPosition = 'center';
-            document.body.style.height = '100vh';
+            // Apply fade effect to the fixed-background div
+            document.querySelector('.fixed-background').style.background =
+                `linear-gradient(rgba(250, 234, 224, ${1 - opacity}), rgba(250, 234, 224, ${1 - opacity})),
+                url('assets/vindmølle1.jpg') no-repeat center center / auto 100vh`;
         });
     }
 </script>
